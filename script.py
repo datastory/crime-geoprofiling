@@ -10,7 +10,7 @@ import math
 # Načtení míst s graffiti
 points = {}
 
-pointFile = csv.reader(open('/Users/jancibulka/Downloads/TEOF_points.txt'), delimiter=',', quotechar='"')
+pointFile = csv.reader(open('TEOF_points.txt'), delimiter=',', quotechar='"')
 for row in pointFile:
     if(row[0] == 'OBJECTID'):
         continue
@@ -19,7 +19,7 @@ for row in pointFile:
 # Načtení adresních bodů, zdroj RÚIAN
 addr = {}
 
-addrFile = csv.reader(open('/Users/jancibulka/Downloads/TEOF_addr.txt'), delimiter=',', quotechar='"')
+addrFile = csv.reader(open('TEOF_addr.txt'), delimiter=',', quotechar='"')
 for row in addrFile:
     if(row[0] == 'OBJECTID'):
         continue
